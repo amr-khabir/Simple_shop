@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+
+    <title>واجهة عرض المنتجات</title>
+    <style>
+        body{font: small-caps 20px/2.1 "Amiri",serif  ;
+		}
+        h1 {
+		color: #333;
+		text-align: center;
+		margin-top: 50px;
+	}
+        table {
+            width: 95%;
+            height: 80%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 20px;
+		border : 10px double #ccc;
+        border-radius: 20px;
+		box-shadow: 5px 5px 5px #888;
+        position: relative;
+        text-align: center;
+        }
+        img {
+            width: 75%;
+	}
+
+    img:hover {
+        width: 80%;
+        border : 2.5px solid #dc7272;
+        border-radius: 20px;
+	}
+    .fa-star { 
+  color: #e4c62f;
+  
+}
+
+.fa-star-o {
+  color: #d0bc22; 
+}
+    </style>
+</head>
+<body>
+    <h1>واجهة عرض المنتجات</h1>
+    <div>
+    <table style="border: solid;">
+        <caption>المتنجات</caption>
+        <tr >
+            <th>وصلة شاخن</th>
+            <th>ساعة</th>
+            <th>كاميرا wifi</th>
+        </tr>
+        <tr>
+            <td><img src="https://ae04.alicdn.com/kf/Sc0cb97370cff452190388920305514e6y.jpg_q75.jpg_.webp" onclick="showHiddenElement1()"></td>
+            <td><img src="https://ae04.alicdn.com/kf/S567b31a93937488b8944c96afafe7e07J.jpg_.webp" onclick="showHiddenElement2()"></td>
+            <td><img src="https://ae04.alicdn.com/kf/Sb82d5520bd1041b2b667659083ab3b67Y.jpg_.webp" onclick="showHiddenElement3()"></td>
+        </tr>
+        <tr>
+            <td>$8  السعر  <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div></td>
+            <td>$50 السعر  <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></td>
+            <td>$150 السعر <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div></td>
+        </tr>
+    </table>
+</div>
+
+ 
+<script src="c.js"></script>
+</body>
+</html>

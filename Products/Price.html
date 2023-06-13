@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>واجهة دفع النقود</title>
+    <style>
+		body{font: small-caps 20px/2.1 "Amiri",serif  ;
+		}
+        h1 {
+		color: #333;
+		text-align: center;
+		margin-top: 50px;
+	}
+    div{
+        width: 50%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 20px;
+		border : 10px double #ccc;
+        border-radius: 20px;
+		box-shadow: 5px 5px 5px #888;
+        position: relative;
+    }
+	form {
+		width: 50%;
+		margin: 0 auto;
+        margin-left: 0px;
+		background-color: #fff;
+		padding: 20px ;
+		border: 1px solid #ccc;
+		box-shadow: 5px 5px 5px #888;
+	}
+
+	label {
+		width: 120px;
+		margin-bottom: 10px;
+		color: #555;
+	}
+
+	input[type="text"], input[type="number"], input[type="month"] {
+		padding: 5px;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	input[type="submit"] {
+		background-color: #5855f1;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 20px;
+        width: 100%;
+        display: inline;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #0e2278;
+        height: 55px;
+        font-size: 25px;
+		margin-top: 5px;
+	}
+    button {
+		background-color: #f52f2f;
+        color: #ffffff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: -23px;
+        position: absolute;
+        right: 25px;
+		
+	}
+
+    button:hover {
+		background-color: #ee0000;
+        width: 100px;
+        height: 40px;
+	}
+</style>
+    </style>
+</head>
+<body>
+	<h1>واجهة دفع النقود</h1>
+    <div>
+	<form action="process_payment.php" method="post" >
+		<label for="name">الاسم الكامل:</label>
+		<input type="text" id="name" name="name" placeholder="عمرو خبير" required><br>
+
+		<label for="card_number">رقم البطاقة:</label>
+		<input type="text" id="card_number" name="card_number" placeholder="123456789" required><br>
+
+		<label for="expiration_date">تاريخ الانتهاء:</label>
+		<input type="month" id="expiration_date" name="expiration_date" required><br>
+
+		<label for="cvv">CVV:</label>
+		<input type="text" id="cvv" name="cvv" placeholder="1233" required><br>
+
+		<label for="amount">المبلغ:</label>
+		<input type="number" id="d1" name="amount" disabled required><br>
+
+		<input type="submit" value="دفع">
+       
+	</form>
+    <a href="view.html"><button>الرجوع</button></a>
+    </div>
+
+	<script src="jsc."></script>
+</body>
+</html>

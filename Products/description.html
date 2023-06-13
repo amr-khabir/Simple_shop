@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+
+    <title>واجهة صفات المنتج</title>
+    <style>
+        body{font: small-caps 20px/2.1 "Amiri",serif  ;
+		}
+         h1 {
+		color: #333;
+		text-align: center;
+		margin-top: 50px;
+	}
+    div{
+        width: 90%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 20px;
+		border : 10px double #ccc;
+        border-radius: 20px;
+        margin-left: 0px;
+		box-shadow: 5px 5px 5px #888;
+        display: none;
+    }
+         img {
+            width: 25%;
+            border-right: 10px double #3ec845;
+            border-bottom: 10px double #3ec845;
+            border-radius: 20px;
+            margin-top: -20px;
+            margin-left: -20px;
+
+	}
+    button {
+		background-color: #2dda27;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 25px;
+		margin-top: 20px;
+        width: 100%;
+
+	}
+
+    button:hover {
+		background-color: #1a780e;
+        height: 50px;
+        font-size: 30px;
+        margin-top:15px;
+	}
+    h2{
+        text-align: center;
+        margin-top: -115px;
+        position: relative;
+        bottom: 1px;
+    }
+    #st{
+        background-color: #a5e9a3;
+		color: white;
+        padding: 10px 20px;
+		border: solid 1px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 25px;
+        }
+    #s1{
+        text-align: right;
+       font-size: 20px;
+    }
+    .fa-star { 
+  color: #e4c62f;
+  
+}
+
+.fa-star-o {
+  color: #d0bc22; 
+}
+#rating{
+    text-align: right ;
+
+    font-size: 20px;
+}
+#starr{
+    position: relative;
+    right: 400px;
+}
+form {
+		width: 92%;
+		margin: 15px auto;
+        margin-left: 0px;
+		background-color: #fff;
+		padding: 20px ;
+		border: 1px solid #ccc;
+		box-shadow: 5px 5px 5px #888;
+        text-align: right;
+	}
+
+	input[type="text"],[type="button"] {
+		padding: 5px;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+    #txt1{
+        display: block;
+        padding: 5px;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 16px;
+		margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>واجهة صفات المنتج</h1>
+    <div id="p1" title="وصلة شاحن" id="hidden-element">
+            <img src="https://ae04.alicdn.com/kf/Sc0cb97370cff452190388920305514e6y.jpg_q75.jpg_.webp">
+            <h2>وصلة شاحن</h2>
+            <br>
+
+            <span class="s1">
+                <p id="pr1" style="display: none;">x=8</p> 
+                <p>السعر: 8$ فقط</p> 
+               <b> تتميز بالمتانة والصلابة، حيث أن معظمها مصنوع من مواد عالية الجودة مثل النايلون والبولي يوريثان والفولاذ المقاوم للصدأ، مما يجعلها تدوم لفترة طويلة.
+تدعم العديد من المعايير والمواصفات القياسية للشحن ونقل البيانات، مثل USB
+           </b> </span>
+           <br>
+        <button id="d1" onclick="price1()">شراء</button>
+    </div> 
+
+    <div id="p2" title="ساعة" >
+            <img src="https://ae04.alicdn.com/kf/S567b31a93937488b8944c96afafe7e07J.jpg_.webp">
+            <h2>ساعة</h2>
+            <span class="s1">
+                <p> السعر: 50$ فقط</p> 
+                <br>
+               <b> تتميز بالمتانة والصلابة، حيث أن معظم الساعات مصنوعة من مواد عالية الجودة مثل الفولاذ المقاوم للصدأ والتيتانيوم والزجاج المقوى والجلود والمطاط، مما يجعلها تدوم لفترة طويلة.
+
+                تحتوي على مجموعة من الميزات والوظائف المختلفة، مثل عرضالتاريخ والتوقيت في مدن مختلفة، ومؤشرات للتقويم والتوقيت العالمي والإيقاع الخ </b> </span>
+                <br>
+                <button id="d2" onclick="price2()">شراء</button>
+    </div>
+
+    <div id="p3" title="كاميرا">
+            <img src="https://ae04.alicdn.com/kf/Sb82d5520bd1041b2b667659083ab3b67Y.jpg_.webp">
+            <h2>كاميرا wifi </h2> 
+            <span class="s1">
+                <p>السعر: 150$ فقط</p> 
+                <br>
+               <b> تتيح للمستخدمين التقاط الصور والفيديو عن بعد ونقلها عبر شبكة الواي فاي بدلاً من استخدام كابلات الاتصال التقليدية، مما يجعلها منتجًا عمليًا وسهل الاستخدام.
+                تحتوي على مجموعة من الميزات والوظائف المختلفة، مثل الزوم البصري والتركيز التلقائي والتصوير المستمر والتحكم عن بعد وغيرها، كما تحتوي بعض الكاميرات على تقنيات حديثة مثل تقنية الذكاء الاصطناعي لتحسين جودة الصور وتحسين الكشف عن الوجوه والكائنات.
+                </b> </span>
+                <br>
+        <button id="d3" onclick="price3()">شراء</button>
+    </div> 
+
+    <div id="rating" style="display: block;">من فضلك اضف تقييمك لمنتجنا</div>
+        <form action="#">
+        <label for="name">من فضك أعطنى رأيك عن المنتج</label>
+        <br>
+		<input type="text" id="txt" name="name" onchange="textt()"><br>
+        <input type="button" value=">>>>" id="b1" style="width: 10%;" >
+        <div id="txt1">
+            <span id="st">هذا المنتج رائع</span><br>
+            <span id="st">لقد استفدت منه </span><br>
+            <span id="st">  جيد</span><br>
+
+        </div>
+    </form>
+    
+    <a href="view.html"><button>الرجوع</button></a>
+    <script src="c.js"></script>
+</body>
+</html>
